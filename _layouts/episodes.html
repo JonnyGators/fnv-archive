@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<h1>Friday Night Videos Archive</h1>
+
+{% assign sorted_episodes = site.episodes | sort: "title" %}
+{% for episode in sorted_episodes %}
+  <section>
+    <h2>{{ episode.title }}</h2>
+    {% if episode.private_reel %}
+      <p><strong>Private Reel:</strong> {{ episode.private_reel }}</p>
+    {% endif %}
+    <ul>
+      {% for video in episode.videos %}
+        <li>
+          {{ video.title }}
+          {% if video.world_premiere_video %} 🌟{% endif %}
+          {% if video.hall_of_fame %} 🎖️{% endif %}
+          {% if video.vote_nominee %}
+            🗳️ {{ video.vote_results }} votes
+            {% if video.vote_winner %} 🏆{% endif %}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+    {% if episode.notes %}
+      <p><em>{{ episode.notes }}</em></p>
+    {% endif %}
+  </section>
+{% endfor %}
