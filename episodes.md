@@ -15,7 +15,7 @@ permalink: /episodes/
     </tr>
   </thead>
   <tbody>
-    {% assign sorted_episodes = site.episodes | sort: "title" %}
+    {% assign sorted_episodes = site.episodes | sort: "date" %}
     {% for episode in sorted_episodes %}
       <tr>
         <td><a href="{{ episode.url }}">{{ episode.title }}</a></td>
