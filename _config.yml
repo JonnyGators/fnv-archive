@@ -1,3 +1,6 @@
+url: "https://jonnygators.github.io"
+baseurl: "/fnv-archive"
+
 collections:
   episodes:
     output: true
