@@ -21,16 +21,16 @@ permalink: /episodes/
       <tr>
         <td><a href="{{ episode.url | relative_url }}">{{ episode.title }}</a></td>
         <td>
-          {% if episode.private_reel %}
+          {% if episode.private_reel and episode.private_reel != "" %}
             {{ episode.private_reel }}
-          {% elsif episode.guest_host %}
+          {% elsif episode.guest_host and episode.guest_host != "" %}
             {{ episode.guest_host }}
           {% else %}
             —
           {% endif %}
         </td>
         <td>
-          {% if episode.index_notes %}
+          {% if episode.index_notes and episode.index_notes != "" %}
             {{ episode.index_notes }}
           {% else %}
             —
