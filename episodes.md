@@ -12,6 +12,7 @@ permalink: /episodes/
       <th>Air Date</th>
       <th>Private Reel / Guest Host</th>
       <th>Notes</th>
+      <th>Recording</th>
     </tr>
   </thead>
   <tbody>
@@ -34,6 +35,18 @@ permalink: /episodes/
           {% else %}
             —
           {% endif %}
+        </td>
+        <td>
+          {% case episode.recording_status %}
+            {% when "complete" %}
+              <span style="color:#00cc66;font-weight:bold;">✔️ Complete</span>
+            {% when "incomplete" %}
+              <span style="color:#ffaa00;font-weight:bold;">⏳ Incomplete</span>
+            {% when "none" %}
+              <span style="color:#cc0033;font-weight:bold;">❌ None</span>
+            {% else %}
+              —
+          {% endcase %}
         </td>
       </tr>
     {% endfor %}
