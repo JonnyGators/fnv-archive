@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+{% if page.private_reel %}
+  <p><strong>Private Reel:</strong> {{ page.private_reel }}</p>
+{% endif %}
+
+{% if page.guest_host %}
+  <p><strong>Guest Host:</strong> {{ page.guest_host }}</p>
+{% endif %}
+
+{% if page.notes %}
+  <p><em>{{ page.notes }}</em></p>
+{% endif %}
+
+<h2>Videos</h2>
+<ul>
+  {% for video in page.videos %}
+    <li>
+      {{ video.title }}
+      {% if video.world_premiere_video %}
+        <span class="badge badge-premiere">World Premiere</span>
+      {% endif %}
+      {% if video.hall_of_fame %}
+        <span class="badge badge-hof">Hall of Fame</span>
+      {% endif %}
+      {% if video.vote_nominee %}
+        <span class="badge badge-vote">{{ video.vote_results }} votes</span>
+        {% if video.vote_winner %}
+          <span class="badge badge-winner">Winner</span>
+        {% endif %}
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
