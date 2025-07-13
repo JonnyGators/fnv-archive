@@ -29,8 +29,8 @@ permalink: /episodes/
           {% endif %}
         </td>
         <td>
-          {% if episode.notes %}
-            {{ episode.notes }}
+          {% if episode.index_notes %}
+            {{ episode.index_notes }}
           {% else %}
             —
           {% endif %}
