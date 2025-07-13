@@ -18,7 +18,7 @@ permalink: /episodes/
     {% assign sorted_episodes = site.episodes | sort: "date" %}
     {% for episode in sorted_episodes %}
       <tr>
-        <td><a href="{{ episode.url }}">{{ episode.title }}</a></td>
+        <td><a href="{{ episode.url | relative_url }}">{{ episode.title }}</a></td>
         <td>
           {% if episode.private_reel %}
             {{ episode.private_reel }}
