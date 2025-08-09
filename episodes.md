@@ -5,9 +5,9 @@ permalink: /episodes/
 ---
 
 <header style="text-align: center; margin-top: 2em;">
-  <img src="/fnv-archive/assets/images/FNV-logo-tweaked.jpg" alt="Friday Night Videos Logo"
+  <img src="{{ 'assets/images/FNV-logo-tweaked.jpg' | relative_url }}" alt="Friday Night Videos Logo"
        style="max-width: 300px; margin-bottom: 1em;">
-  <h1 style="text-align: center;">Friday Night Videos Episode Guide</h1>
+  <h1>Friday Night Videos Episode Guide</h1>
 </header>
 
 <table>
@@ -25,16 +25,16 @@ permalink: /episodes/
       <tr>
         <td><a href="{{ episode.url | relative_url }}">{{ episode.title }}</a></td>
         <td>
-          {% if episode.private_reel and episode.private_reel != "" %}
+          {% if episode.private_reel %}
             {{ episode.private_reel }}
-          {% elsif episode.guest_host and episode.guest_host != "" %}
+          {% elsif episode.guest_host %}
             {{ episode.guest_host }}
           {% else %}
             —
           {% endif %}
         </td>
         <td>
-          {% if episode.index_notes and episode.index_notes != "" %}
+          {% if episode.index_notes %}
             {{ episode.index_notes }}
           {% else %}
             —
