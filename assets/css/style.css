@@ -15,7 +15,7 @@ h1, h2 {
 section {
   margin-bottom: 3rem;
   padding: 1rem;
-  background-color: #0a0a0a; /* Slight contrast from pure black */
+  background-color: #000000; /* Match body for seamless logo blending */
   border-radius: 8px;
   box-shadow: 0 0 10px #000;
 }
@@ -71,12 +71,12 @@ th, td {
 }
 
 th {
-  background-color: #111111; /* Darker header to match new theme */
+  background-color: #000000; /* Pure black */
   color: #ffcc00;
 }
 
 tr:hover {
-  background-color: #111111; /* Matches new black base */
+  background-color: #000000; /* Pure black */
 }
 
 td:nth-child(3) {
