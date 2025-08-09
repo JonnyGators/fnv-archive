@@ -1,5 +1,5 @@
-url: "https://jonnygators.github.io"
-baseurl: "/fnv-archive"
+url: "https://fridaynightvideos.org"
+baseurl: ""  # ← root domain, no subpath
 
 collections:
   episodes:
