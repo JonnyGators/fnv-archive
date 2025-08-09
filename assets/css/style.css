@@ -1,7 +1,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #111;
-  color: #eee;
+  background-color: #000000; /* Pure black */
+  color: #eeeeee;
   line-height: 1.6;
   padding: 2rem;
 }
@@ -15,7 +15,7 @@ h1, h2 {
 section {
   margin-bottom: 3rem;
   padding: 1rem;
-  background-color: #1a1a1a;
+  background-color: #0a0a0a; /* Slight contrast from pure black */
   border-radius: 8px;
   box-shadow: 0 0 10px #000;
 }
@@ -71,15 +71,15 @@ th, td {
 }
 
 th {
-  background-color: #222;
+  background-color: #111111; /* Darker header to match new theme */
   color: #ffcc00;
 }
 
 tr:hover {
-  background-color: #2a2a2a;
+  background-color: #111111; /* Matches new black base */
 }
 
 td:nth-child(3) {
   font-style: italic;
-  color: #ccc;
+  color: #cccccc;
 }
