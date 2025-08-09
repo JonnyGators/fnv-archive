@@ -5,7 +5,7 @@ permalink: /episodes/
 ---
 
 <header style="text-align: center; margin-top: 2em;">
-  <img src="{{ 'assets/images/FNV-logo-tweaked.jpg' | relative_url }}" alt="Friday Night Videos Logo"
+  <img src="{{ '/assets/images/FNV-logo-tweaked.jpg' | relative_url }}" alt="Friday Night Videos Logo"
        style="max-width: 300px; margin-bottom: 1em;">
   <h1>Friday Night Videos Episode Guide</h1>
 </header>
