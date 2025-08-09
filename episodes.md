@@ -4,7 +4,11 @@ title: Episode Archive
 permalink: /episodes/
 ---
 
-<h1 style="text-align: center;">Friday Night Videos Episode Guide</h1>
+<header style="text-align: center; margin-top: 2em;">
+  <img src="/fnv-archive/assets/images/FNV-logo-tweaked.jpg" alt="Friday Night Videos Logo"
+       style="max-width: 300px; margin-bottom: 1em;">
+  <h1 style="text-align: center;">Friday Night Videos Episode Guide</h1>
+</header>
 
 <table>
   <thead>
