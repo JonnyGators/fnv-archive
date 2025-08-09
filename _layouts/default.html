@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header style="text-align: center; margin-top: 2em;">
+    <img src="{{ '/assets/images/FNV-logo-tweaked.jpg' | relative_url }}" alt="Friday Night Videos Logo"
+         style="max-width: 300px; margin-bottom: 1em;">
+    <h1>Friday Night Videos Archive</h1>
+  </header>
+
+  <main style="max-width: 800px; margin: 2em auto; padding: 0 1em;">
     {{ content }}
-  </body>
+  </main>
+
+  <footer style="text-align: center; margin-top: 3em; font-size: 0.9em; color: #666;">
+    &copy; {{ site.time | date: '%Y' }} Friday Night Videos Archive. All rights reserved.
+  </footer>
+</body>
 </html>
