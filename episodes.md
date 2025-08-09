@@ -4,7 +4,7 @@ title: Episode Archive
 permalink: /episodes/
 ---
 
-<h1>Friday Night Videos Archive</h1>
+<h1 style="text-align: center;">Friday Night Videos Episode Guide</h1>
 
 <table>
   <thead>

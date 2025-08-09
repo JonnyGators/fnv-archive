@@ -1,7 +1,9 @@
-<header>
-  <img src="PATH_TO_LOGO_IMAGE" alt="Friday Night Videos Logo" style="text-align: center;max-width: 300px; margin-bottom: 1em;">
-  <h1>Friday Night Videos Archive</h1>
+<header style="text-align: center; margin-top: 2em;">
+  <img src="/fnv-archive/assets/images/FNV-logo-tweaked.jpg" alt="Friday Night Videos Logo"
+       style="max-width: 300px; margin-bottom: 1em;">
+  <h1 style="text-align: center;">Friday Night Videos Archive</h1>
 </header>
+
 
   <section>
     <p><strong>Friday Night Videos</strong> was NBC’s late-night answer to the music video revolution—a weekly showcase of pop, rock, and R&B that aired from 1983 to 2002. Before cable was ubiquitous, this was how millions discovered new artists, watched exclusive performances, and caught glimpses of celebrity hosts in unexpected pairings.</p>
