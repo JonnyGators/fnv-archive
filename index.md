@@ -1,5 +1,5 @@
 <header>
-  <img src="PATH_TO_LOGO_IMAGE" alt="Friday Night Videos Logo" style="max-width: 300px; margin-bottom: 1em;">
+  <img src="PATH_TO_LOGO_IMAGE" alt="Friday Night Videos Logo" style="text-align: center;max-width: 300px; margin-bottom: 1em;">
   <h1>Friday Night Videos Archive</h1>
 </header>
 
@@ -12,10 +12,18 @@
   </section>
 
 
-<nav>
-  <h2>Explore the Archive</h2>
-  <ul>
-    <li><a href="/fnv-archive/episodes.html">Episode List</a></li>
-    <!-- Future links: About, Tools, Changelog -->
-  </ul>
-</nav>
+<div style="text-align: center; margin-top: 2em;">
+  <a href="/fnv-archive/episodes" style="
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0.75em 1.5em;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  " onmouseover="this.style.backgroundColor='#444'" onmouseout="this.style.backgroundColor='#222'">
+    View Episode List
+  </a>
+</div>
