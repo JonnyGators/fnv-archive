@@ -4,7 +4,6 @@ title: Episode Archive
 permalink: /episodes/
 ---
 
-{% raw %}
 <header style="text-align: center; margin-top: 2em;">
   <img src="{{ '/assets/images/FNV-logo-tweaked.jpg' | relative_url }}" alt="Friday Night Videos Logo"
        style="max-width: 300px; margin-bottom: 1em;">
@@ -57,4 +56,3 @@ permalink: /episodes/
     {% endfor %}
   </tbody>
 </table>
-{% endraw %}
